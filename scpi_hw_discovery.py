@@ -59,9 +59,9 @@ if __name__ == "__main__":
     if len(sys.argv) == 1:
         idn_scan()
     elif len(sys.argv) == 2:
-        idn_scan(dump_yml=(sys.argv[1] == 'True'))
+        idn_scan(dump_yml=(sys.argv[1] == 'dump_yml=True'))
     else:
-        idn_scan(dump_yml=(sys.argv[1] == 'True'), baud_rates=tuple(sys.argv[2:]))
+        idn_scan(dump_yml=(sys.argv[1] == 'dump_yml=True'), baud_rates=tuple(sys.argv[2:]))
 
 
 
