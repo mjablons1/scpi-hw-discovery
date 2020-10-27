@@ -53,9 +53,6 @@ def idn_scan(dump_yml=False, baud_rates=(9600,)):
 if __name__ == "__main__":
     import sys
 
-    print(sys.argv)
-    print(len(sys.argv))
-
     if len(sys.argv) == 1:
         idn_scan()
     elif len(sys.argv) == 2:
