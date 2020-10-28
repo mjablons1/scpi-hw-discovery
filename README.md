@@ -6,6 +6,7 @@ The script sends "*IDN?" query to all COM ports. Query is sent blindly with EOL 
 Responses are printed to the console allowing you to see which com ports are present (and with some luck) also which specific devices are assigned to them.
 
 Example output:
+
 ![example_small](graphics/example_small.PNG)
 
 ## When to use?
