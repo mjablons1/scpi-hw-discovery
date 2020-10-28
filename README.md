@@ -1,9 +1,13 @@
 # scpi-hw-discovery:
 ## What is it for?
-Short script to try to identify SCPI serial hardware to COM port mapping present in your system.
+Short script to try to identify serial measurement hardware to COM port mapping present in your system. Hardware must be SCPI compliant to respond to the standard query.
 ## What does it do?
-It sends "*IDN?" command to all COM ports. Command is sent blindly with EOL (\r\n) termination to all COM ports. If required the command is repeated at other specified baud rates.
-Responses are printed to the console allowing you to see what com ports are present (and with some luck), also what specific devices are at which com port..
+The script sends "*IDN?" query to all COM ports. Query is sent blindly with EOL (\r\n) termination to all COM ports. If required the command is repeated at other specified baud rates.
+Responses are printed to the console allowing you to see which com ports are present (and with some luck) also which specific devices are assigned to them.
+
+Example output:
+![example_small](graphics/example_small.png)
+
 ## When to use?
 * If you need to run serial hardware control scripts but are unsure what COM port was assigned to which device. 
 * If you, like me, find it awkward to use the device manager to try to spot a COM port appear and disappear in hope of recognizing your hardware location as you frantically plug the USB in and out while cursing. 
