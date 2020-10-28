@@ -2,8 +2,8 @@
 ## What is it for?
 Short script to try to identify serial measurement hardware to COM port mapping present in your system. Hardware must be SCPI compliant to respond to the standard query.
 ## What does it do?
-The script sends "*IDN?" query to all COM ports. Query is sent blindly with EOL (\r\n) termination to all COM ports. If required the command is repeated at other specified baud rates.
-Responses are printed to the console allowing you to see which com ports are present (and with some luck) also which specific devices are assigned to them.
+The script sends "*IDN?" query to all COM ports. Query is sent blindly with EOL (\r\n) termination to all COM ports. If required, the command is repeated at other, specific baud rates.
+Response is printed to console listing COM ports and the identification strings received wherever successful.
 
 Example output:
 
