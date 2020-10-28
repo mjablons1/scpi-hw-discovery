@@ -19,7 +19,7 @@ You can either:
     ```
     python scpi_hw_discovery.py
     ```
-   You can additionally search at 115200 baud and dump yaml file with the result:
+    example with additional search at e.g. 115200 baud and dump yaml file with the result:
     ```
     python scpi_hw_discovery.py dump_yml=True 9600 115200
     ```
@@ -28,10 +28,10 @@ You can either:
     __NOTE__: you must replace the call path with your own path to the Python prompt (here anaconda))
     ```
     call C:\Users\Z40\Anaconda3\Scripts\activate.bat
-    python scpi_hw_discovery.py dump_yml=True 9600
+    python scpi_hw_discovery.py dump_yml=True
     pause
     ```
-* import into your own code:
+* or import into your own code:
     ```python
     from scpi_hw_discovery import idn_scan
     idn_scan(dump_yml=True, baud_rates=(9600, 115200))
